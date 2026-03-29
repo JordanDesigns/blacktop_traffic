@@ -495,7 +495,7 @@ body::before {
     max-width: none;
     height: auto;
     display: block;
-    margin-top: -120px;
+    margin-top: -220px;
     margin-left: -50px;
 }
 
@@ -2235,7 +2235,21 @@ section {
     }
 
     .mission__content-inner {
-        padding: 48px 24px;
+        padding: 48px 0;
+    }
+
+    .commitment__image {
+        padding-top: 0;
+    }
+
+    .commitment__image img {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .commitment__content {
+        padding-bottom: 40px;
     }
 
     .mission__image-overlay {
@@ -2329,6 +2343,6 @@ section {
     .fullwidth-divider { height: 180px; }
     .fullwidth-divider--tall { height: 240px; }
 
-    .mission__content-inner { padding: 40px 20px; }
+    .mission__content-inner { padding: 40px 0; }
     .mission__image { height: 240px; }
 }
