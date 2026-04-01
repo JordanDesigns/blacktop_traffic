@@ -255,7 +255,7 @@ body::before {
 
 .nav__hamburger-label {
     font-family: var(--font-heading);
-    font-size: 0.7rem;
+    font-size: 0.875rem;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -505,7 +505,7 @@ body::before {
 .services-preview {
     background: var(--black);
     padding-top: 65px !important;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
 }
 
 .services-preview__header {
@@ -2152,6 +2152,16 @@ section {
     .footer { padding: 40px 24px 20px; }
     .page-header { padding: 120px 24px 48px; }
 
+    .page-header--bg .section-title {
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35), 0 4px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-page .section-title,
+    .contact-page .section-subtitle,
+    .contact-page .section-label {
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+
     .hero__title em::after { bottom: 2px; }
     .hero__title em::before { bottom: -6px; }
 
@@ -2303,6 +2313,20 @@ section {
     .footer__top {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .footer__col-link {
+        padding: 6px 0;
+    }
+
+    .footer__facebook-link {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+    .footer__facebook-link svg {
+        width: 24px;
+        height: 24px;
     }
 
     .footer__bottom {
