@@ -542,6 +542,13 @@ body::before {
     gap: 28px;
 }
 
+a.preview-card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
 .preview-card {
     background: var(--gray-900);
     border: 1px solid var(--gray-800);
@@ -1301,6 +1308,41 @@ section {
         rgba(10, 10, 10, 0.6) 100%
     );
     pointer-events: none;
+}
+
+.story__nameplate {
+    position: relative;
+    background: var(--gray-900);
+    padding: 20px 24px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.story__nameplate-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: var(--yellow);
+}
+
+.story__nameplate-name {
+    font-family: var(--font-condensed);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.story__nameplate-title {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--gray-400);
+    letter-spacing: 0.5px;
 }
 
 .story__image-accent {
@@ -2079,6 +2121,7 @@ section {
     .nav__hamburger { display: flex; }
 
     .nav {
+        position: relative;
         background: rgba(0, 0, 0, 0.95);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -2221,6 +2264,18 @@ section {
         aspect-ratio: 16 / 9;
     }
 
+    .story__nameplate {
+        padding: 8px 24px 8px 28px;
+    }
+
+    .story__nameplate-name {
+        font-size: 1.3rem;
+    }
+
+    .story__nameplate-title {
+        font-size: 0.85rem;
+    }
+
     .story__image-accent {
         width: 80px;
         height: 80px;
@@ -2242,6 +2297,10 @@ section {
     .mission__image {
         order: -1;
         height: 300px;
+    }
+
+    .mission__image img {
+        object-position: center top;
     }
 
     .mission__content-inner {
@@ -2308,6 +2367,16 @@ section {
     .contact__layout {
         grid-template-columns: 1fr;
         gap: 24px;
+        padding: 0 16px;
+    }
+
+    .contact-card {
+        padding: 28px 20px;
+        word-break: break-word;
+    }
+
+    .contact-card__value {
+        font-size: 1rem;
     }
 
     .footer__top {
